@@ -1,0 +1,67 @@
+  .bg-img{
+    background: no-repeat center center; 
+    height: 75vh;
+  }
+
+  .bg-img2{
+    background: no-repeat center center;
+    background-position-y: -15rem;
+    min-height: 10rem;
+    filter: brightness(30%);
+  }
+
+
+
+  .bg-img:before{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.6);
+  }
+
+  .btn-primary{
+    border-radius: .5rem 0 .5rem 0;
+    min-width: 10rem;
+  }
+
+  .navbar-brand{
+    max-width: 60%;
+  }
+
+  .apac_logo{
+
+    max-width: 13rem;
+  }
+
+  .navbar-toggler{
+    min-width: 5rem;
+    min-height: 4rem;
+  }
+
+  .carousel-caption{
+    min-width: 90%;
+
+  }
+
+  .sticky-top-title{
+    position: sticky;
+    top: 7rem;
+    z-index: 1;
+  }
+
+  .logo-min-height{
+    min-height: 30%;
+
+  }
+
+
+  @media (min-width: 760px) {   
+    
+    .carousel-caption{
+      min-width: 40%;
+    }
+  }
+
