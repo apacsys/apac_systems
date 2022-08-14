@@ -1,94 +1,80 @@
-  .bg-img{
-    background: no-repeat center center; 
-    height: 75vh;
-  }
+.bg-img{
+  background: no-repeat center center; 
+  height: 75vh;
+}
+.bg-img-panel{
+  background: no-repeat center center;
+  background-position-y: -15rem;
+  min-height: 10rem;
+  filter: brightness(30%);
+}
+.bg-img:before{
+  content:"";
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background:rgba(0,0,0,0.6);
+}
+.btn-primary{
+  border-radius: .5rem 0 .5rem 0;
+  min-width: 10rem;
+}
+.navbar-brand{
+  max-width: 60%;
+}
+.apac_logo{
+  max-width: 13rem;
+  
+}
+.navbar-toggler{
+  min-width: 5rem;
+  min-height: 4rem;
+}
+.carousel-caption{
+  min-width: 90%;
+}
+.sticky-top-title{
+  position: sticky;
+  top: 7rem;
+  z-index: 1;
+}
+.logo-min-height{
+  min-height: 20%;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+    margin-bottom: 40px;
+}
+label {
+    color: #333;
+}
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px;
+}
 
-  .bg-img-panel{
-    background: no-repeat center center;
-    background-position-y: -15rem;
-    min-height: 10rem;
-    filter: brightness(30%);
-  }
+.help-block.with-errors {
+    color: #ff5050;
+    margin-top: 5px;
+}
 
-  .bg-img:before{
-    content:"";
-    position:absolute;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
-    background:rgba(0,0,0,0.6);
-  }
-
-  .btn-primary{
-    border-radius: .5rem 0 .5rem 0;
-    min-width: 10rem;
-  }
-
-  .navbar-brand{
-    max-width: 60%;
-  }
-
-  .apac_logo{
-
-    max-width: 13rem;
-  }
-
-  .navbar-toggler{
-    min-width: 5rem;
-    min-height: 4rem;
-  }
-
-  .carousel-caption{
-    min-width: 90%;
-
-  }
-
-  .sticky-top-title{
-    position: sticky;
-    top: 7rem;
-    z-index: 1;
-  }
-
-  .logo-min-height{
-    min-height: 20%;
-
-  }
-
-
-  body {
-    font-family: 'Lato', sans-serif;
-  }
-
-  h1 {
-      margin-bottom: 40px;
-  }
-
-  label {
-      color: #333;
-  }
-
-  .btn-send {
-      font-weight: 300;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      width: 80%;
-      margin-left: 3px;
-      }
-  .help-block.with-errors {
-      color: #ff5050;
-      margin-top: 5px;
-
-  }
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
+  font-weight: bold;
+}
 
 
 
-
-
-  @media (min-width: 760px) {   
+@media (min-width: 760px) {   
     
     .carousel-caption{
       min-width: 40%;
     }
-  }
+}
 
