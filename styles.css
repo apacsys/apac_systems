@@ -1,12 +1,14 @@
 .bg-img{
   background: no-repeat center center; 
-  height: 75vh;
+  background-size: cover;
+  height: 60vh;
 }
 .bg-img-panel{
   background: no-repeat center center;
+  background-size: cover;
   background-position-y: -15rem;
   min-height: 10rem;
-  filter: brightness(30%);
+  filter: brightness(60%);
 }
 .bg-img:before{
   content:"";
@@ -15,7 +17,7 @@
   bottom:0;
   left:0;
   right:0;
-  background:rgba(0,0,0,0.6);
+  background:rgba(0,0,0,0.3);
 }
 .btn-primary{
   border-radius: .5rem 0 .5rem 0;
