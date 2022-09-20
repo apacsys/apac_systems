@@ -6,7 +6,6 @@
 .bg-img-panel{
   background: no-repeat center center;
   background-size: cover;
-  background-position-y: -15rem;
   min-height: 10rem;
   filter: brightness(60%);
 }
@@ -39,7 +38,7 @@
 }
 .sticky-top-title{
   position: sticky;
-  top: 7rem;
+  top: 14%;
   z-index: 1;
 }
 .logo-min-height{
