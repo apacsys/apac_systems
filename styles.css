@@ -22,11 +22,16 @@
   border-radius: .5rem 0 .5rem 0;
   min-width: 10rem;
 }
+
+nav{
+  height: 6rem;
+}
+
 .navbar-brand{
   max-width: 60%;
 }
 .apac_logo{
-  max-width: 13rem;
+  max-width: 19rem;
   
 }
 .navbar-toggler{
@@ -38,7 +43,7 @@
 }
 .sticky-top-title{
   position: sticky;
-  top: 14%;
+  top: 5rem;
   z-index: 1;
 }
 .logo-min-height{
@@ -68,6 +73,10 @@ label {
 
 .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link{
   font-weight: bold;
+}
+
+div .card{
+  
 }
 
 
