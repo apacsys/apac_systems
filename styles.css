@@ -23,10 +23,6 @@
   min-width: 10rem;
 }
 
-nav{
-  height: 6rem;
-}
-
 .navbar-brand{
   max-width: 60%;
 }
@@ -75,8 +71,9 @@ label {
   font-weight: bold;
 }
 
-div .card{
-  
+ul li{
+  font-size: .9rem; 
+
 }
 
 
@@ -85,6 +82,9 @@ div .card{
     
     .carousel-caption{
       min-width: 40%;
+    }
+    nav{
+      height: 5rem;
     }
 }
 
