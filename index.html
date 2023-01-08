@@ -65,8 +65,7 @@
         <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active bg-img" style="background-image: url('Images/Carousel_BGs/binary_bg.jpg')"
-          data-bs-interval="10000">
+        <div class="carousel-item active bg-img" style="background-image: url('Images/Carousel_BGs/binary_bg.jpg')"data-bs-interval="10000">
           <div class="carousel-caption d-md-block position-absolute top-50 start-50 translate-middle">
             <h5 class="display-1 fw-semibold mb-4">Welcome</h5>
             <p>Our Goal Is Complete Customer Satisfaction.</p>
@@ -79,7 +78,7 @@
               project design, system integration,
               migration and modification on all of the following commonly-used control platforms:
             </p>
-            <a type="button" class="btn btn-secondary mt-4" href="#expertise"> Know More <i
+            <a type="button" class="btn btn-primary mt-4" href="#expertise"> Know More <i
                 class="fa-solid fa-arrow-right-long ms-2"></i></a>
           </div>
         </div>
@@ -88,7 +87,7 @@
             <h5 class="display-1 fw-semibold mb-4">Services</h5>
             <p class="lh-lg">APAC Controls is pleased to provide full scope of automation and controls services on a
               turnkey basis or as a system integrator for the specific project scope.</p>
-            <a type="button" class="btn btn-secondary mt-4" href="#services"> Know More <i
+            <a type="button" class="btn btn-primary mt-4" href="#services"> Know More <i
                 class="fa-solid fa-arrow-right-long ms-2"></i></a>
           </div>
         </div>
@@ -455,17 +454,17 @@
 <script>
 
     let navLinks = document.querySelectorAll( ".nav-link" );
+    console.log(navLinks);
 
+    navLinks.forEach((el)=>{
+      el.addEventListener("click", (event, listener)=>{
+        let navLinksActive = document.querySelectorAll( ".nav-link.active" );
+        navLinksActive[0].classList.remove("active");
+        console.log(event.path[0].classList);
+        event.path[0].classList.add("active");
 
-    document.addEventListener("click", (event, listener)=>{
-      let navLinksActive = document.querySelectorAll( ".nav-link.active" );
-      navLinksActive[0].classList.remove("active");
-      console.log(event.path[0].classList);
-      event.path[0].classList.add("active");
-      // console.log(listener);
-   
+      });
 
-      
     });
 
 

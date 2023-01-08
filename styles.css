@@ -1,3 +1,32 @@
+
+@keyframes animatetext{
+  0%{
+    opacity: 0;
+    transform: translateY(-30px);
+
+  }
+  100%{
+    opacity: 100;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+.active > *{
+  animation: animatetext 10s forwards;
+}
+
 .bg-img{
   background: no-repeat center center; 
   background-size: cover;
@@ -36,6 +65,7 @@
 }
 .carousel-caption{
   min-width: 90%;
+  opacity: 0;
 }
 .sticky-top-title{
   position: sticky;
@@ -73,6 +103,13 @@ label {
 
 ul li{
   font-size: .9rem; 
+
+}
+
+.card.p-4:hover{
+  background: linear-gradient(-45deg,#a9f2ff,#f8f8f8);
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
 
 }
 
